@@ -20,10 +20,9 @@
 
 {SYNTHESIZE_BLOCK}
 
-+ ({CLASSNAME} *)modelObjectWithDictionary:(NSDictionary *)dict
++ (instancetype)modelObjectWithDictionary:(NSDictionary *)dict
 {
-    {CLASSNAME} *instance = {CLASSNAME_INIT};
-    return instance;
+    return [[self alloc] initWithDictionary:dict];
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict
